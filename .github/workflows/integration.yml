@@ -58,6 +58,8 @@ jobs:
         with:
           repository: kubernetes-sigs/cri-tools
           path: src/sigs.k8s.io/cri-tools
+          # This version of cri-tools passed when building cri-dockerd v0.2.0-1
+          ref: 4d09c460de1488093d0d8fdab2a587cf605bd914
 
       - name: Build cri-tools
         working-directory: src/sigs.k8s.io/cri-tools
